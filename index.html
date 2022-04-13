@@ -8,11 +8,11 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="cover.css" rel="stylesheet">
     <title>Kült Film</title>
+
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark"
-      style="background-image: url('img/3.jpg'); background-repeat: no-repeat; background-size: cover">
-
+<body id="body" class="d-flex h-100 text-center text-white bg-dark">
+<!--      style="background-image: url('img/33.jpg'); background-repeat: no-repeat; background-size: cover">-->
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
         <div>
@@ -39,4 +39,16 @@
 </div>
 
 </body>
+
+<script type="text/javascript">
+
+        var totalCount = 33;
+
+        var num =  Math.ceil( Math.random() * totalCount );
+        document.body.background = 'img/' + num + '.jpg';
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+
+</script>
+
 </html>
