@@ -42,12 +42,22 @@
 
 <script type="text/javascript">
 
-        var totalCount = 33;
+    if (window.screen.availWidth > 500) {
+        var totalCount = 39;
 
-        var num =  Math.ceil( Math.random() * totalCount );
+        var num = Math.ceil(Math.random() * totalCount);
         document.body.background = 'img/cover/' + num + '.jpg';
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundSize = "cover";
+    }
+    else{
+        var totalCount = 15;
+
+        var num = Math.ceil(Math.random() * totalCount);
+        document.body.background = 'img/mobilecover/' + num + '.jpg';
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+    }
 
 </script>
 
