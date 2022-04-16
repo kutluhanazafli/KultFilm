@@ -30,6 +30,9 @@
             color: #fff;
             border-bottom-color: #fff;
         }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
@@ -50,9 +53,9 @@
 <div class="border-top-dark mt-5">
     <div class="container">
         <div class="row mt-5">
-            <section class="col-sm-10">
+            <section class="col-sm-10 list">
 
-                <article class="row mb-3" id=”nightcrawler” onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
+                <article class="row mb-3 neo-noir" id=”nightcrawler” onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -75,7 +78,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3" id=”americanpsycho” onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
+                <article class="row mb-3 neo-noir" id=”americanpsycho” onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -98,7 +101,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3" id=”eternalsunshine” onclick="location.href=`../KultFilm/reviews/EternalSunshineoftheSpotlessMind.html`" style="cursor:pointer">
+                <article class="row mb-3 gizem" id=”eternalsunshine” onclick="location.href=`../KultFilm/reviews/EternalSunshineoftheSpotlessMind.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -122,7 +125,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3" id=”citizenkane” onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
+                <article class="row mb-3 noir" id=”citizenkane” onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -145,7 +148,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3" id=”rearwindow” onclick="location.href=`../KultFilm/reviews/RearWindow.html`" style="cursor:pointer">
+                <article class="row mb-3 noir" id=”rearwindow” onclick="location.href=`../KultFilm/reviews/RearWindow.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -169,7 +172,7 @@
                 </article>
 
             </section>
-            <aside class="col-sm-2">
+            <aside class="col-sm-2 filters">
                 <h6>
                     <small>
                         <strong>
@@ -177,18 +180,21 @@
                         </strong>
                     </small>
                 </h6>
-                <ul class="list-inline aside-buttons">
+                <ul class="list-inline aside-buttons filters">
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary">Noir</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick=filterAnimals(event)>All</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary">Neo-noir</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick=filterAnimals(event)>Noir</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary">Korku</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="neo-noir" onclick=filterAnimals(event)>Neo-noir</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary">Gizem</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick=filterAnimals(event)>Korku</a>
+                    </li>
+                    <li class="list-inline-item mb-2">
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick=filterAnimals(event)>Gizem</a>
                     </li>
                 </ul>
             </aside>
@@ -197,4 +203,19 @@
 </div>
 
 </body>
+<script>
+    function filterAnimals(e) {
+        const animals = document.querySelectorAll(".list article");
+        let filter = e.target.dataset.filter;
+        if (filter === '*') {
+            animals.forEach(animal => animal.classList.remove('hidden'));
+        }  else {
+            animals.forEach(animal => {
+                animal.classList.contains(filter) ?
+                    animal.classList.remove('hidden') :
+                    animal.classList.add('hidden');
+            });
+        };
+    };
+</script>
 </html>
