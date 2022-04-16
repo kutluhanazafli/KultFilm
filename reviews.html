@@ -182,19 +182,19 @@
                 </h6>
                 <ul class="list-inline aside-buttons filters">
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick=filterAnimals(event)>All</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick=filterMovies(event)>All</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick=filterAnimals(event)>Noir</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick=filterMovies(event)>Noir</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="neo-noir" onclick=filterAnimals(event)>Neo-noir</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="neo-noir" onclick=filterMovies(event)>Neo-noir</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick=filterAnimals(event)>Korku</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick=filterMovies(event)>Korku</a>
                     </li>
                     <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick=filterAnimals(event)>Gizem</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick=filterMovies(event)>Gizem</a>
                     </li>
                 </ul>
             </aside>
@@ -204,16 +204,16 @@
 
 </body>
 <script>
-    function filterAnimals(e) {
-        const animals = document.querySelectorAll(".list article");
+    function filterMovies(e) {
+        const movies = document.querySelectorAll(".list article");
         let filter = e.target.dataset.filter;
         if (filter === '*') {
-            animals.forEach(animal => animal.classList.remove('hidden'));
+            movies.forEach(movie => movie.classList.remove('hidden'));
         }  else {
-            animals.forEach(animal => {
-                animal.classList.contains(filter) ?
-                    animal.classList.remove('hidden') :
-                    animal.classList.add('hidden');
+            movies.forEach(movie => {
+                movie.classList.contains(filter) ?
+                    movie.classList.remove('hidden') :
+                    movie.classList.add('hidden');
             });
         };
     };
