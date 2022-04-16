@@ -52,10 +52,10 @@
 
 <div class="border-top-dark mt-5">
     <div class="container">
-        <div class="row mt-5">
-            <section class="col-sm-10 list">
+        <div class="row mt-5 liste">
+            <section class="col-sm-10">
 
-                <article class="row mb-3 neo-noir" id=”nightcrawler” onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
+                <article class="row mb-3 neonoir" id=”nightcrawler” onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -78,7 +78,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 neo-noir" id=”americanpsycho” onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
+                <article class="row mb-3 neonoir" id=”americanpsycho” onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -125,7 +125,7 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 noir" id=”citizenkane” onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
+                <article class="row mb-3 gizem" id=”citizenkane” onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -172,7 +172,12 @@
                 </article>
 
             </section>
-            <aside class="col-sm-2 filters">
+
+
+
+
+
+            <aside class="col-sm-2">
                 <h6>
                     <small>
                         <strong>
@@ -180,42 +185,50 @@
                         </strong>
                     </small>
                 </h6>
-                <ul class="list-inline aside-buttons filters">
-                    <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick=filterMovies(event)>All</a>
-                    </li>
-                    <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick=filterMovies(event)>Noir</a>
-                    </li>
-                    <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="neo-noir" onclick=filterMovies(event)>Neo-noir</a>
-                    </li>
-                    <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick=filterMovies(event)>Korku</a>
-                    </li>
-                    <li class="list-inline-item mb-2">
-                        <a href="" class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick=filterMovies(event)>Gizem</a>
-                    </li>
-                </ul>
+                
+
+                    
+                        
+                        <ul class="list-inline aside-buttons filters">
+                            <li class="list-inline-item mb-2">
+                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick="filterMovies(event)">All</a>
+                            </li>
+                            <li class="list-inline-item mb-2">
+                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick="filterMovies(event)">Noir</a>
+                            </li>
+                            <li class="list-inline-item mb-2">
+                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="neonoir" onclick="filterMovies(event)">Neo-noir</a>
+                            </li>
+                            <li class="list-inline-item mb-2">
+                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick="filterMovies(event)">Korku</a>
+                            </li>
+                            <li class="list-inline-item mb-2">
+                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick="filterMovies(event)">Gizem</a>
+                            </li>
+                        
+                        </ul>
+                
+                    
+                
             </aside>
         </div>
     </div>
 </div>
 
 </body>
-<script>
-    function filterMovies(e) {
-        const movies = document.querySelectorAll(".list article");
-        let filter = e.target.dataset.filter;
-        if (filter === '*') {
-            movies.forEach(movie => movie.classList.remove('hidden'));
-        }  else {
-            movies.forEach(movie => {
-                movie.classList.contains(filter) ?
-                    movie.classList.remove('hidden') :
-                    movie.classList.add('hidden');
-            });
-        };
-    };
+<script type="text/javascript">
+  function filterMovies(e) {
+  const movies = document.querySelectorAll(".liste article");
+  let filter = e.target.dataset.filter;
+  if (filter === '*') {
+    movies.forEach(movie => movie.classList.remove('hidden'));
+  }  else {
+    movies.forEach(movie => {
+        movie.classList.contains(filter) ?
+        movie.classList.remove('hidden') :
+        movie.classList.add('hidden');
+    });
+  };
+};
 </script>
 </html>
