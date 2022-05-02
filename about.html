@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Kült Film</title>
     <style>
         .nav-masthead .nav-link {
@@ -87,6 +88,21 @@
 <footer class="text-white-50" style="text-align: center; margin-top: 10%">
     <p>Bu site <a href="https://www.linkedin.com/in/kutluhanazafli/" class="text-white">Kutluhan Azaflı</a> tarafından <a href="https://www.instagram.com/noirsinema/" class="text-white">Noir Sinema</a> takipçileri için yapılmıştır.</p>
 </footer>
+
+<audio src="https://cdn.discordapp.com/attachments/581509924325163040/968962348243124345/test.mp3" id="audio" style="display: none">
+    <p>Your browser does not support the audio element.</p>
+</audio>
+<script>
+    window.addEventListener("keydown", checkKeyPressed, false);
+
+    function checkKeyPressed(e) {
+        if (e.keyCode == "19") {
+            //Play Music
+            document.getElementById('audio').play()
+        }
+    }
+</script>
+
 
 </body>
 </html>
