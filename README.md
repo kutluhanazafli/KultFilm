@@ -1,7 +1,7 @@
-# <p style="text-align: center"> Kült Film </p>
-### <p style="text-align: center"> Kült Film Bootstrap 5 ve JavaScript ile yapılmış bir film inceleme sitesidir. </p>
+# <p align=center> Kült Film </p>
+### <p align=center> Kült Film Bootstrap 5 ve JavaScript ile yapılmış bir film inceleme sitesidir. </p>
 
-![Homepage](/img/readme/1.png)
+![Homepage](https://raw.githubusercontent.com/kutluhanazafli/KultFilm/main/img/readme/1.png)
 
 ---
 
