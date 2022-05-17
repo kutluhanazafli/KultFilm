@@ -18,7 +18,7 @@
 
 </head>
 
-<body id="body" class="d-flex h-100 text-center text-white bg-dark">
+<body id="body" class="d-flex h-100 text-center text-white bg-dark" onload="background()">
 <!--      style="background-image: url('img/33.jpg'); background-repeat: no-repeat; background-size: cover">-->
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
@@ -49,22 +49,25 @@
 
 <script type="text/javascript">
 
-    if (window.screen.availWidth > 500) {
-        var totalCount = 39;
+     function background() {
+        if (window.screen.availWidth > 500) {
+            var totalCount = 39;
 
-        var num = Math.ceil(Math.random() * totalCount);
-        document.body.background = 'img/cover/' + num + '.jpg';
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
-    }
-    else{
-        var totalCount = 15;
+            var num = Math.ceil(Math.random() * totalCount);
+            document.body.background = 'img/cover/' + num + '.jpg';
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
+        else{
+            var totalCount = 15;
 
-        var num = Math.ceil(Math.random() * totalCount);
-        document.body.background = 'img/mobilecover/' + num + '.jpg';
-        document.body.style.backgroundRepeat = "no-repeat";
-        document.body.style.backgroundSize = "cover";
+            var num = Math.ceil(Math.random() * totalCount);
+            document.body.background = 'img/mobilecover/' + num + '.jpg';
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+        }
     }
+
 
 </script>
 
