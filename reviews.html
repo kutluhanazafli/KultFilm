@@ -40,6 +40,23 @@
         .hidden {
             display: none;
         }
+
+        .hoverImg * {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .hoverImg img {
+            max-width: 100%;
+            vertical-align: top;
+        }
+        .hoverImg:hover img,
+        .hoverImg.hover img {
+            -webkit-transform: scale(1.3) rotate(5deg);
+            transform: scale(1.3) rotate(5deg);
+        }
+
     </style>
 </head>
 
@@ -80,7 +97,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 hoverImg">
                         <img src="img/reviews/Nightcrawler/1.jpg" alt="" class="w-100">
                     </div>
                 </article>
@@ -103,7 +120,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 hoverImg">
                         <img src="img/reviews/AmericanPsycho/1.jpg" alt="" class="w-100">
                     </div>
                 </article>
@@ -127,7 +144,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 hoverImg">
                         <img src="img/reviews/EternalSunshineoftheSpotlessMind/1.jpg" alt="" class="w-100">
                     </div>
                 </article>
@@ -150,7 +167,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 hoverImg">
                         <img src="img/reviews/CitizenKane/1.jpg" alt="" class="w-100">
                     </div>
                 </article>
@@ -173,7 +190,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-5 hoverImg">
                         <img src="img/reviews/RearWindow/1.jpg" alt="" class="w-100">
                     </div>
                 </article>
@@ -214,18 +231,34 @@
 
 </body>
 <script type="text/javascript">
-  function filterMovies(e) {
-  const movies = document.querySelectorAll(".liste article");
-  let filter = e.target.dataset.filter;
-  if (filter === '*') {
-    movies.forEach(movie => movie.classList.remove('hidden'));
-  }  else {
-    movies.forEach(movie => {
-        movie.classList.contains(filter) ?
-        movie.classList.remove('hidden') :
-        movie.classList.add('hidden');
-    });
-  };
-};
+          function filterMovies(e) {
+          const movies = document.querySelectorAll(".liste article");
+          let filter = e.target.dataset.filter;
+          if (filter === '*') {
+            movies.forEach(movie => movie.classList.remove('hidden'));
+          }  else {
+            movies.forEach(movie => {
+                movie.classList.contains(filter) ?
+                movie.classList.remove('hidden') :
+                movie.classList.add('hidden');
+            });
+          };
+        };
+
+
+          var snippet = [].slice.call(document.querySelectorAll(".hover"));
+          if (snippet.length) {
+              snippet.forEach(function (snippet) {
+                  snippet.addEventListener("mouseout", function (event) {
+                      if (event.target.parentNode.tagName === "img") {
+                          event.target.parentNode.classList.remove("hover");
+                      } else {
+                          event.target.parentNode.classList.remove("hover");
+                      }
+                  });
+              });
+          }
+
+
 </script>
 </html>
