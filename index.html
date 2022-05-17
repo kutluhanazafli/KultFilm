@@ -16,6 +16,157 @@
     <meta name="theme-color" content="#ffffff">
     <title>Kült Film</title>
 
+<style>
+    .button.dark {
+        --shadow: 0 2px 8px -1px rgba(38, 34, 34, 0.82);
+        --shadow-hover: 0 4px 20px -2px rgb(24, 22, 22);
+    }
+    .button {
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        box-shadow: var(--shadow);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-appearance: none;
+    }
+    .button div span:nth-child(1) {
+        --d: 0.05s;
+    }
+    .button div span:nth-child(2) {
+        --d: 0.1s;
+    }
+    .button div span:nth-child(3) {
+        --d: 0.15s;
+    }
+    .button div span:nth-child(4) {
+        --d: 0.2s;
+    }
+    .button div span:nth-child(5) {
+        --d: 0.25s;
+    }
+    .button div span:nth-child(6) {
+        --d: 0.3s;
+    }
+    .button div span:nth-child(7) {
+        --d: 0.35s;
+    }
+    .button div span:nth-child(8) {
+        --d: 0.4s;
+    }
+    .button div span:nth-child(9) {
+        --d: 0.45s;
+    }
+    .button div span:nth-child(10) {
+        --d: 0.5s;
+    }
+    .button div span:nth-child(11) {
+        --d: 0.55s;
+    }
+    .button div span:nth-child(12) {
+        --d: 0.60s;
+    }
+    .button div span:nth-child(13) {
+        --d: 0.65s;
+    }
+    .button div span:nth-child(14) {
+        --d: 0.70s;
+    }
+    .button div span:nth-child(15) {
+        --d: 0.75s;
+    }
+    .button div span:nth-child(16) {
+        --d: 0.80s;
+    }
+    .button div span:nth-child(17) {
+        --d: 0.85s;
+    }
+    .button div span:nth-child(18) {
+        --d: 0.90s;
+    }
+    .button div span:nth-child(19) {
+        --d: 0.95s;
+    }
+    .button div span:nth-child(20) {
+        --d: 1.00s;
+    }
+    .button div span:nth-child(21) {
+        --d: 1.05s;
+    }
+    .button div span:nth-child(22) {
+        --d: 1.10s;
+    }
+    .button div span:nth-child(23) {
+        --d: 1.15s;
+    }
+    .button:hover {
+        --y: var(--move-hover);
+        --shadow: var(--shadow-hover);
+        --move: -4px;
+        --shadow-active: 0 3px 1px rgba(0, 0, 0, 0.2);
+    }
+    .button:hover span {
+        -webkit-animation: move var(--duration) linear var(--d);
+        animation: move var(--duration) linear var(--d);
+    }
+    .button.smoke {
+        --move: 12px;
+        --move-y: -8px;
+        --blur: 4px;
+    }
+    .button.smoke:hover span {
+        --duration: 1s;
+        -webkit-animation: smoke var(--duration) linear var(--d);
+        animation: smoke var(--duration) linear var(--d);
+    }
+    @-webkit-keyframes move {
+        40% {
+            transform: translateY(var(--move));
+            text-shadow: var(--shadow-active);
+        }
+    }
+
+    @keyframes move {
+        40% {
+            transform: translateY(var(--move));
+            text-shadow: var(--shadow-active);
+        }
+    }
+    @-webkit-keyframes smoke {
+        45%, 55% {
+            filter: blur(var(--blur));
+        }
+        50%, 50.1% {
+            opacity: 0;
+        }
+        25%, 75% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(var(--move)) translateY(var(--move-y));
+        }
+        50.1% {
+            transform: translateX(calc(var(--move) * -1));
+        }
+    }
+    @keyframes smoke {
+        45%, 55% {
+            filter: blur(var(--blur));
+        }
+        50%, 50.1% {
+            opacity: 0;
+        }
+        25%, 75% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(var(--move)) translateY(var(--move-y));
+        }
+        50.1% {
+            transform: translateX(calc(var(--move) * -1));
+        }
+    }
+</style>
+
 </head>
 
 <body id="body" class="d-flex h-100 text-center text-white bg-dark" onload="background()">
@@ -36,7 +187,7 @@
         <h1 style="font-family: 'Droid Serif'">Karanlık Sinemaya Açılan Kapı</h1>
         <p class="lead" style="color: white; ">Sürekli ıslak olan caddeler, keskin ışıklandırma kontrastları, umutsuzluk, belirsizlik, karakterler arasındaki sert diyaloglar, eğik kamera açıları ve dahası… </p>
         <p class="lead">
-            <a href="reviews.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Karanlık dünyayı keşfet</a>
+            <a href="reviews.html" class="btn btn-lg btn-secondary fw-bold border-error bg-dark text-light button smoke dark">Karanlık dünyayı keşfet</a>
         </p>
     </main>
 
@@ -68,6 +219,7 @@
         }
     }
 
+     document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
 
 </script>
 

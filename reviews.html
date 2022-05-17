@@ -14,6 +14,8 @@
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <title>Kült Film</title>
     <style>
         .nav-masthead .nav-link {
@@ -37,25 +39,29 @@
             color: #fff;
             border-bottom-color: #fff;
         }
+
         .hidden {
             display: none;
         }
 
-        .hoverImg{
+        .hoverImg {
             position: relative;
             display: inline-block;
             overflow: hidden;
         }
+
         .hoverImg * {
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+
         .hoverImg img {
             max-width: 100%;
             vertical-align: top;
         }
+
         .hoverImg:hover img,
         .hoverImg.hover img {
             -webkit-transform: scale(1.3) rotate(5deg);
@@ -69,7 +75,8 @@
 <div class="d-flex w-100 h-100 p-3 mx-auto flex-column" style=" max-width: 42em">
     <header class="mb-auto">
         <div>
-            <h3 class="float-md-start mb-0" style="color: #FF1A1A; font-weight: 900; font-family: 'Berlin Sans FB'">Kült Film</h3>
+            <h3 class="float-md-start mb-0" style="color: #FF1A1A; font-weight: 900; font-family: 'Berlin Sans FB'">Kült
+                Film</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a class="nav-link" href="index.html">Anasayfa</a>
                 <a class="nav-link active" aria-current="page" href="reviews.html">İncelemeler</a>
@@ -84,7 +91,8 @@
         <div class="row mt-5 liste">
             <section class="col-sm-10">
 
-                <article class="row mb-3 neonoir" id=”nightcrawler” onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
+                <article class="row mb-3 neonoir" id=”nightcrawler”
+                         onclick="location.href=`../KultFilm/reviews/Nightcrawler.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -92,7 +100,10 @@
                             </strong>
                         </h6>
                         <p>
-                            Dan Gilroy tarafından yazılıp yönetilen Nightcrawler birçok açıdan ilgi çekici bir filmdi. 2014 yılının hit filmlerinden biri olan Nightcrawler, muazzam senaryosuna başta Jake Gyllenhall olmak üzere kadrosundaki oyuncuların başarılı performansları eklenince dikkat çekici bir film haline gelmişti.
+                            Dan Gilroy tarafından yazılıp yönetilen Nightcrawler birçok açıdan ilgi çekici bir filmdi.
+                            2014 yılının hit filmlerinden biri olan Nightcrawler, muazzam senaryosuna başta Jake
+                            Gyllenhall olmak üzere kadrosundaki oyuncuların başarılı performansları eklenince dikkat
+                            çekici bir film haline gelmişti.
                         </p>
                         <ul class="list-inline small">
                             <li class="list-inline-item">12 Nisan</li>
@@ -107,7 +118,8 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 neonoir korku" id=”americanpsycho” onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
+                <article class="row mb-3 neonoir korku" id=”americanpsycho”
+                         onclick="location.href=`../KultFilm/reviews/AmericanPsycho.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -115,7 +127,10 @@
                             </strong>
                         </h6>
                         <p>
-                            Bret Easton Ellis’in aynı isimli kült romanından beyazperdeye uyarlanan Amerikan Sapığı (American Psycho) gösterime girdiği 2000 yılında izleyicileri ikiye bölmüştü. Kimi filmi çok sevip, kült filmler listesinin en üst sıralarına yerleştirirken, kimisi de filmden aynı derecede nefret etmişti.
+                            Bret Easton Ellis’in aynı isimli kült romanından beyazperdeye uyarlanan Amerikan Sapığı
+                            (American Psycho) gösterime girdiği 2000 yılında izleyicileri ikiye bölmüştü. Kimi filmi çok
+                            sevip, kült filmler listesinin en üst sıralarına yerleştirirken, kimisi de filmden aynı
+                            derecede nefret etmişti.
                         </p>
                         <ul class="list-inline small">
                             <li class="list-inline-item">10 Nisan</li>
@@ -130,16 +145,22 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 gizem" id=”eternalsunshine” onclick="location.href=`../KultFilm/reviews/EternalSunshineoftheSpotlessMind.html`" style="cursor:pointer">
+                <article class="row mb-3 gizem" id=”eternalsunshine”
+                         onclick="location.href=`../KultFilm/reviews/EternalSunshineoftheSpotlessMind.html`"
+                         style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
-                                Eternal Sunshine of the Spotless Mind filmindeki Freudyen teknikler: Freud zihninin ebedi karanlığı
+                                Eternal Sunshine of the Spotless Mind filmindeki Freudyen teknikler: Freud zihninin
+                                ebedi karanlığı
                             </strong>
                         </h6>
                         <p>
-                            Hayat, Freud’un da tasvir ettiği gibi, bizim için “çok zor”. Kendisi, üzerimize dökülen felç edici acının yaşamaya devam etme irademizi alt üst etmek için fazlasıyla yeterli olduğunu iddia eder.
-                            “Uygarlık ve Hoşnutsuzlukları” adlı kitabında, mutsuzluğun kaynağı olan üç sebep Freud tarafından tanımlanmıştır: bedenimiz, dış dünya ve başkalarıyla ilişkilerimiz.
+                            Hayat, Freud’un da tasvir ettiği gibi, bizim için “çok zor”. Kendisi, üzerimize dökülen felç
+                            edici acının yaşamaya devam etme irademizi alt üst etmek için fazlasıyla yeterli olduğunu
+                            iddia eder.
+                            “Uygarlık ve Hoşnutsuzlukları” adlı kitabında, mutsuzluğun kaynağı olan üç sebep Freud
+                            tarafından tanımlanmıştır: bedenimiz, dış dünya ve başkalarıyla ilişkilerimiz.
                         </p>
                         <ul class="list-inline small">
                             <li class="list-inline-item">2 Nisan</li>
@@ -154,7 +175,8 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 gizem noir" id=”citizenkane” onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
+                <article class="row mb-3 gizem noir" id=”citizenkane”
+                         onclick="location.href=`../KultFilm/reviews/CitizenKane.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -162,7 +184,10 @@
                             </strong>
                         </h6>
                         <p>
-                            Sinema tarihi boyunca bir çok filme imza atıldı ve atılmaya devam ediliyor. Fakat bazı yapımlar vardır ki sinema tarihinin tozlu raflarında çürümeyi redder ve zaman karşı gelerek günümüze kadar sevilerek izlenir. Citizen Kane de tam olarak bu tanımlamaya uyan filmlerden birisi.
+                            Sinema tarihi boyunca bir çok filme imza atıldı ve atılmaya devam ediliyor. Fakat bazı
+                            yapımlar vardır ki sinema tarihinin tozlu raflarında çürümeyi redder ve zaman karşı gelerek
+                            günümüze kadar sevilerek izlenir. Citizen Kane de tam olarak bu tanımlamaya uyan filmlerden
+                            birisi.
                         </p>
                         <ul class="list-inline small">
                             <li class="list-inline-item">29 Mart</li>
@@ -177,7 +202,8 @@
                     </div>
                 </article>
 
-                <article class="row mb-3 noir" id=”rearwindow” onclick="location.href=`../KultFilm/reviews/RearWindow.html`" style="cursor:pointer">
+                <article class="row mb-3 noir" id=”rearwindow”
+                         onclick="location.href=`../KultFilm/reviews/RearWindow.html`" style="cursor:pointer">
                     <div class="col-7">
                         <h6 class="mt-2">
                             <strong>
@@ -185,10 +211,15 @@
                             </strong>
                         </h6>
                         <p>
-                            Görevi sırasında bacağını kıran ve vücudu belden aşağısından başlayarak ayağına kadar alçıyla kaplı durumdaki gazeteci L.B. Jefferies evden çıkamadığı süreçte eğlence olarak dairesinin arka penceresinden insanları seyretmeye başlar. Seyrettikçe etkilenir. Apartmanın arka boşluğundan görülen binalarda yaşayan insanların her birisini tanıyacak kadar izlemiştir. Ancak hasta olan ve kocasıyla sık sık kavga eden karşı binadaki kadın birden ortadan kaybolur.
+                            Görevi sırasında bacağını kıran ve vücudu belden aşağısından başlayarak ayağına kadar
+                            alçıyla kaplı durumdaki gazeteci L.B. Jefferies evden çıkamadığı süreçte eğlence olarak
+                            dairesinin arka penceresinden insanları seyretmeye başlar. Seyrettikçe etkilenir. Apartmanın
+                            arka boşluğundan görülen binalarda yaşayan insanların her birisini tanıyacak kadar
+                            izlemiştir. Ancak hasta olan ve kocasıyla sık sık kavga eden karşı binadaki kadın birden
+                            ortadan kaybolur.
                         </p>
                         <ul class="list-inline small">
-                            <li class="list-inline-item">22 Mart </li>
+                            <li class="list-inline-item">22 Mart</li>
                             <li class="list-inline-item">5 dakika okuma süresi</li>
                             <li class="list-inline-item">
                                 <i class="far fa-star"></i>
@@ -203,31 +234,36 @@
 
 
             <aside class="col-sm-2">
-                    <h6>
-                        <small>
-                            <strong>
-                                KATEGORİLER
-                            </strong>
-                        </small>
-                    </h6>
+                <h6>
+                    <small>
+                        <strong>
+                            KATEGORİLER
+                        </strong>
+                    </small>
+                </h6>
 
-                        <ul class="list-inline aside-buttons filters">
-                            <li class="list-inline-item mb-2">
-                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="*" onclick="filterMovies(event)">All</a>
-                            </li>
-                            <li class="list-inline-item mb-2">
-                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir" onclick="filterMovies(event)">Noir</a>
-                            </li>
-                            <li class="list-inline-item mb-2">
-                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="neonoir" onclick="filterMovies(event)">Neo-noir</a>
-                            </li>
-                            <li class="list-inline-item mb-2">
-                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku" onclick="filterMovies(event)">Korku</a>
-                            </li>
-                            <li class="list-inline-item mb-2">
-                                <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem" onclick="filterMovies(event)">Gizem</a>
-                            </li>
-                        </ul>
+                <ul class="list-inline aside-buttons filters">
+                    <li class="list-inline-item mb-2">
+                        <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="*"
+                           onclick="filterMovies(event)">All</a>
+                    </li>
+                    <li class="list-inline-item mb-2">
+                        <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="noir"
+                           onclick="filterMovies(event)">Noir</a>
+                    </li>
+                    <li class="list-inline-item mb-2">
+                        <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="neonoir"
+                           onclick="filterMovies(event)">Neo-noir</a>
+                    </li>
+                    <li class="list-inline-item mb-2">
+                        <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="korku"
+                           onclick="filterMovies(event)">Korku</a>
+                    </li>
+                    <li class="list-inline-item mb-2">
+                        <a class="btn btn-sm btn-outline-secondary filter-option" data-filter="gizem"
+                           onclick="filterMovies(event)">Gizem</a>
+                    </li>
+                </ul>
 
             </aside>
         </div>
@@ -236,33 +272,65 @@
 
 </body>
 <script type="text/javascript">
-          function filterMovies(e) {
-          const movies = document.querySelectorAll(".liste article");
-          let filter = e.target.dataset.filter;
-          if (filter === '*') {
+
+    function filterMovies(e) { // Filmleri kategorilerine göre filtreler
+        const movies = document.querySelectorAll(".liste article");
+        let filter = e.target.dataset.filter;
+        if (filter === '*') {
             movies.forEach(movie => movie.classList.remove('hidden'));
-          }  else {
+        } else {
             movies.forEach(movie => {
                 movie.classList.contains(filter) ?
-                movie.classList.remove('hidden') :
-                movie.classList.add('hidden');
+                    movie.classList.remove('hidden') :
+                    movie.classList.add('hidden');
             });
-          };
-        };
+        }
+        ;
+    };
 
 
-          var snippet = [].slice.call(document.querySelectorAll(".hover"));
-          if (snippet.length) {
-              snippet.forEach(function (snippet) {
-                  snippet.addEventListener("mouseout", function (event) {
-                      if (event.target.parentNode.tagName === "img") {
-                          event.target.parentNode.classList.remove("hover");
-                      } else {
-                          event.target.parentNode.classList.remove("hover");
-                      }
-                  });
-              });
-          }
+    var snippet = [].slice.call(document.querySelectorAll(".hover")); // Resimlerin üzerine mouse götürülünce animasyon gerçekleşir
+    if (snippet.length) {
+        snippet.forEach(function (snippet) {
+            snippet.addEventListener("mouseout", function (event) {
+                if (event.target.parentNode.tagName === "img") {
+                    event.target.parentNode.classList.remove("hover");
+                } else {
+                    event.target.parentNode.classList.remove("hover");
+                }
+            });
+        });
+    }
+
+
+    $(document).ready(function () {  //p taglarının üzerindeyken yazının altı çizilir
+
+        $('p').mouseenter(
+            function () {
+                $(this).css({"text-decoration": "underline"});
+            });
+
+        $('p').mouseleave(
+            function () {
+                $(this).css({"text-decoration": "none"});
+            });
+
+    });
+
+
+    $(document).ready(function () {  //Başlkların üzerindeyken yazılar italik olur
+
+        $('strong').mouseenter(
+            function () {
+                $(this).css({"font-style": "italic"});
+            });
+
+        $('strong').mouseleave(
+            function () {
+                $(this).css({"font-style": "normal"});
+            });
+
+    });
 
 
 </script>

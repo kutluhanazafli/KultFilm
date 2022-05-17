@@ -96,7 +96,7 @@
     <p>Your browser does not support the audio element.</p>
 </audio>
 <script>
-    window.addEventListener("keydown", checkKeyPressed, false);
+    window.addEventListener("keydown", checkKeyPressed, false); // Break-Pause tuşuna bastığında müzik çalar (Eğer discord firewall tarafından engelli değilse)
 
     function checkKeyPressed(e) {
         if (e.keyCode == "19") {
