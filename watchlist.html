@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang=tr class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/watchlist.css" />
+    <title>Kült Film</title>
+    <style>
+        .nav-masthead .nav-link {
+            padding: .25rem 0;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .5);
+            background-color: transparent;
+            border-bottom: .25rem solid transparent;
+        }
+
+        .nav-masthead .nav-link:hover,
+        .nav-masthead .nav-link:focus {
+            border-bottom-color: rgba(255, 255, 255, .25);
+        }
+
+        .nav-masthead .nav-link + .nav-link {
+            margin-left: 1rem;
+        }
+
+        .nav-masthead .active {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+
+<body  style="background: black">
+
+<div class="d-flex w-100 h-100 p-3 mx-auto flex-column" style=" max-width: 42em">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0" style="color: #FF1A1A; font-weight: 900; font-family: 'Berlin Sans FB'">Kült Film</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link" href="index.html">Anasayfa</a>
+                <a class="nav-link" href="reviews.html">İncelemeler</a>
+                <a class="nav-link active" aria-current="page" href="about.html">Hakkımızda</a>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div id="liveToast" class="toast success hide" role="alert" aria-live="assertive" aria-atomic="true"
+             data-delay="4000">
+            <div>
+                <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Listeye eklendi.</div>
+        </div>
+    </div>
+</div>
+<div class="mr-1" style="position: relative">
+    <div style="position: absolute; top: 0; right: 0">
+        <div id="liveToast" class="toast error hide" role="alert" aria-live="assertive" aria-atomic="true"
+             data-delay="4000">
+            <div>
+                <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">Listeye boş ekleme yapamazsınız!</div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="header">
+        <img src="#"
+             class="mb-1" alt="" />
+        <h2>İzlenecekler Listesi</h2>
+        <input type="text" id="task" placeholder="Ne izlemeyi planlıyorsun?" />
+        <span onclick="newElement()" id="liveToastBtn" class="button">Listeye Ekle</span>
+    </div>
+
+    <ul id="list">
+        <li>Kill Bill</li>
+        <li>Hateful Eight</li>
+        <li>Death Proof</li>
+        <li>Blue Velvet</li>
+        <li>Lost Highway</li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    <script src="js/watchlist.js"></script>
+</div>
+
+</body>
+</html>
