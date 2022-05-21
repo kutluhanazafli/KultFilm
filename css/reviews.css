@@ -89,3 +89,32 @@
     background-color: hsla(5, 76%, 62%, .8);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8);
 }
+
+/* hide default button and show contents only */
+button {
+    -webkit-appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+
+/*
+f097 fa-bookmark-o
+f02e fa-bookmark
+*/
+button.active::before {
+    content: "\f02e";
+    font-family: FontAwesome;
+    color: red;
+}
+
+button::before {
+    content: "\f097";
+    font-family: FontAwesome;
+}
+
+
+
+/*
+https://dusted.codes/making-font-awesome-awesome-using-icons-without-i-tags
+*/
