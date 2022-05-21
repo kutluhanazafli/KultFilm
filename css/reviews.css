@@ -113,8 +113,6 @@ button::before {
     font-family: FontAwesome;
 }
 
-
-
-/*
-https://dusted.codes/making-font-awesome-awesome-using-icons-without-i-tags
-*/
+#bookmark {
+    color: #f9f9f9;
+}
