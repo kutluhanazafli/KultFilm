@@ -63,7 +63,7 @@ ul li.checked::before {
 }
 
 .header {
-    background-color: #FF1A1A;
+    background-color: rgba(3, 3, 3, 0.89);
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -104,4 +104,8 @@ input {
 
 .button:hover {
     background-color: #bbb;
+}
+
+#img {
+    width: 1000px;
 }
