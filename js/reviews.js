@@ -74,7 +74,7 @@ $(document).ready(function () {  //En üste geri dön
     });
 });
 
-$(function() {
+$(function() {  // Bookmark button
     //var bookmarkOn = '<i class="fa fa-bookmark"></i>'
     //var bookmarkOff = '<i class="fa fa-bookmark-o"></i>'
 
