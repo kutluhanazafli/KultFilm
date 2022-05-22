@@ -1,0 +1,17 @@
+.reveal__content {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.9s;
+}
+
+.reveal__content > * {
+    transform: scale(1.5);
+    transition: all 0.9s;
+}
+
+.reveal.loaded .reveal__content {
+    height: 100%;
+}
+.reveal.loaded .reveal__content > * {
+    transform: scale(1);
+}
