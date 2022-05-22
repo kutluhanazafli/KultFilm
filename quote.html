@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/quote.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>Quotes</title>
+</head>
+
+<body class="text-light" style="background: black">
+<div class="d-flex w-100 h-100 p-3 mx-auto flex-column" style=" max-width: 42em">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0" style="color: #FF1A1A; font-weight: 900; font-family: 'Berlin Sans FB'">Kült
+                Film</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link" href="index.html">Anasayfa</a>
+                <a class="nav-link active" aria-current="page" href="reviews.html">İncelemeler</a>
+                <a class="nav-link" href="watchlist.html">İzleyeceklerim</a>
+                <a class="nav-link" href="about.html">Hakkımızda</a>
+            </nav>
+        </div>
+    </header>
+</div>
+
+<div class="quote-container">
+    <div class="text-container">
+        <h1 id="title">Günün <span id="red-text">Film Alıntısı</span></h1>
+        <p id="sub-title">Günün alıntısını görmek için lütfen butona tıklayınız!</p>
+        <button class="quote-btn" onclick="generateQuote();">Quote</button>
+        <div class="output-container">
+            <p id="quote"></p>
+            <p id="author"></p>
+            <p id="movie"></p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/quote.js"></script>
+</html>

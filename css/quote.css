@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.quote-container {
+    background-color: #16161a;
+    box-shadow: 0 0 10px rgb(22, 22, 26);
+    border-radius: 50px;
+    margin: 100px auto;
+    padding: 50px;
+    width: 80%;
+    height: 600px;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+#red-text {
+    color: #ff0000;
+}
+.text-container {
+    z-index: 5000;
+}
+
+#title {
+    color: #fffffe;
+    padding: 10px;
+    font-size: 4em;
+}
+
+#sub-title {
+    font-size: 1.5em;
+}
+
+.quote-btn {
+    background-color: rgba(3, 3, 3, 0.89);
+    color: #fffffe;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    margin: 50px 0px;
+    width: 250px;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+.quote-btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.output-container {
+    background-color: #242629;
+    box-shadow: inset 0 0 10px rgb(22, 22, 26);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+}
+
+#quote {
+    color: #fffffe;
+    margin-top: 25px;
+    font-size: 1.5em;
+}
+
+#author {
+    font-size: 1em;
+}
+
+#movie {
+    font-size: 1em;
+    padding-bottom: 25px;
+}
